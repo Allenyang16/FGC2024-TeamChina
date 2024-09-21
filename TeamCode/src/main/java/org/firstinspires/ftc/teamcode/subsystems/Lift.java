@@ -42,7 +42,7 @@ public class Lift extends SubsystemBase {
 
         mFrontLeftSlide.setInverted(false);
         mBackLeftSlide.setInverted(false);
-        mFrontRightSlide.setInverted(false);
+        mFrontRightSlide.setInverted(true);
         mBackRightSlide.setInverted(true);
 
         mFrontLeftSlide.setZeroPowerBehavior(Motor.ZeroPowerBehavior.BRAKE);
@@ -271,6 +271,10 @@ public class Lift extends SubsystemBase {
 //                mBackRightSlide.set(backPower);
 //            }
 //        }
+    }
+
+    public boolean shouldSlowDrive() {
+        return mBackLeftSlide.getDistance() > 1000 && mBackRightSlide.getDistance() > 1000;
     }
 
     public void resetEncoders() {
