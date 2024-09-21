@@ -217,7 +217,7 @@ public class Intake extends SubsystemBase {
         switch (mLeftDoorState){
             case OPEN:
                 mLeftDoorState = DoorState.CLOSE;
-                mDoorLeft.setPosition(0.6);
+                mDoorLeft.setPosition(0.67);
                 break;
             case CLOSE:
                 mLeftDoorState = DoorState.OPEN;
@@ -229,7 +229,7 @@ public class Intake extends SubsystemBase {
         switch (mRightDoorState){
             case OPEN:
                 mRightDoorState = DoorState.CLOSE;
-                mDoorRight.setPosition(0.5);
+                mDoorRight.setPosition(0.43);
                 break;
             case CLOSE:
                 mRightDoorState = DoorState.OPEN;
