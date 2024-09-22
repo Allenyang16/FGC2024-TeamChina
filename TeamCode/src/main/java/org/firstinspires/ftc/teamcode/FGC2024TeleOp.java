@@ -55,7 +55,7 @@ public class FGC2024TeleOp extends CommandOpMode {
             tankDrive,
             () -> -driverLimiter.calculate(gamepadEx1.getLeftY()) ,
             () -> gamepadEx1.getRightX(),
-            lift::shouldSlowDrive));
+                () -> lift.shouldSlowDrive() || gamepadEx1.getTrigger(GamepadKeys.Trigger.LEFT_TRIGGER) > 0.5));
 
     //        lift.setDefaultCommand(new LiftOpenLoopCommand(
     //                lift, () -> gamepadEx2.getLeftY(), () -> -gamepadEx2.getRightY(),
