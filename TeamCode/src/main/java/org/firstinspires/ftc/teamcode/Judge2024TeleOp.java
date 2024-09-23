@@ -3,7 +3,6 @@ package org.firstinspires.ftc.teamcode;
 import com.arcrobotics.ftclib.command.CommandOpMode;
 import com.arcrobotics.ftclib.command.CommandScheduler;
 import com.arcrobotics.ftclib.command.InstantCommand;
-import com.arcrobotics.ftclib.command.button.Button;
 import com.arcrobotics.ftclib.gamepad.GamepadEx;
 import com.arcrobotics.ftclib.gamepad.GamepadKeys;
 import com.arcrobotics.ftclib.gamepad.TriggerReader;
@@ -16,8 +15,8 @@ import org.firstinspires.ftc.teamcode.subsystems.Intake;
 import org.firstinspires.ftc.teamcode.subsystems.Lift;
 import org.firstinspires.ftc.teamcode.subsystems.TankDrive;
 
-@TeleOp(name = "FGC 2024 CommandOP")
-public class FGC2024TeleOp extends CommandOpMode {
+@TeleOp(name = "FGC 2024 NotGameOP")
+public class Judge2024TeleOp extends CommandOpMode {
     private TriggerReader triggerReader;
     private SlewRateLimiter driverLimiter;
     private SlewRateLimiter turnLimiter;
@@ -78,6 +77,10 @@ public class FGC2024TeleOp extends CommandOpMode {
         .whenPressed(new InstantCommand(() -> intake.setArmState(Intake.ArmState.FALLING)))
         .whenReleased(new InstantCommand(() -> intake.setArmState(Intake.ArmState.IDLE)));
 
+    gamepadEx2
+            .getGamepadButton(GamepadKeys.Button.X)
+            .whenPressed(new InstantCommand(()->lift.setBackLiftsPosPower(-0.5)))
+            .whenReleased(new InstantCommand(()->lift.setBackLiftsPosPower(0)));
     gamepadEx2
         .getGamepadButton(GamepadKeys.Button.RIGHT_STICK_BUTTON)
         .whenPressed(
