@@ -31,7 +31,5 @@ public class WjLiftOpenCommand extends CommandBase {
         }else{
             lift.setPower(front + both, both);
         }
-
-
     }
 }
