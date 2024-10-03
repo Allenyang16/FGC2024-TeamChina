@@ -5,7 +5,7 @@ To explore this repository, go to [src directory](https://github.com/Allenyang16
 
 Our hardwares are instantiated in the subsystems, and commands contain the actions we need to use during the whole match.
 
-For more information, go to our [Chief Delphi]((https://www.chiefdelphi.com/t/fgc-2024-team-china-engineering-book-cad-code-release/472296)) to ask more questions!
+For more information, go to our [Chief Delphi](https://www.chiefdelphi.com/t/fgc-2024-team-china-engineering-book-cad-code-release/472296) to ask more questions!
 
 1. What **IDE** are you using?
 
