@@ -1,5 +1,5 @@
 # FGC Team China Codes
-This is repository is used for FIRST Global Challenge 2024 [Feeding the Future](https://www.youtube.com/watch?v=VoT_eVi7vQ0)
+This repository is used for FIRST Global Challenge 2024 [Feeding the Future](https://www.youtube.com/watch?v=VoT_eVi7vQ0)
 
 To explore this repository, go to [src directory](https://github.com/Allenyang16/FGC2024-TeamChina/tree/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode)
 
