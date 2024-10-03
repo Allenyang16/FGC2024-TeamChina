@@ -22,6 +22,8 @@ For more information, go to our [Chief Delphi](https://www.chiefdelphi.com/) to 
 
    For our FGC 2024 robot, we used [PID controller](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/introduction/introduction-to-pid.html) to control the position of our intake/claw, a mechanism to help drivers grab **FOOD** balls. You can check this out in the [*Intake.java*](https://github.com/Allenyang16/FGC2024-TeamChina/blob/master/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/subsystems/Intake.java).
 
-4. What 
+4. What other **features** you have?
+
+   We used *lots of* state machines, which are the [enum classes](https://www.baeldung.com/a-guide-to-java-enums) in our subsystems. With the use of it, we can simplify our codes by only considering what actions the motors or servos need to do corresponding to the current state. When buttons are triggered, we need to only change state of the subsystem without considering too much about basic operations on hardwares.
      
 
